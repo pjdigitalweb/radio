@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rádio Top Voice Gospel - Mobile</title>
+    <link rel="canonical" href="https://topvoice.com.br/radio" />
+
+    <link rel="icon" type="image/png" href="https://topvoice.com.br/gospel/webradio/img/cover.jpg" />
+    <link rel="stylesheet" href="https://topvoice.com.br/gospel/webradio/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://topvoice.com.br/gospel/webradio/css/animate.css">
+    <link rel="stylesheet" href="https://topvoice.com.br/gospel/webradio/css/style.css?v2322">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <style type="text/css">
+        .cover-album {
+            max-width: 80%;
+            margin: auto;
+            background: url(https://topvoice.com.br/gospel/webradio/img/cover.jpg) no-repeat;
+            background-size: cover;
+            border: 2px solid #fefefe;
+            box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.4);
+            transition: background-image 1s;
+            border-radius: 10px;
+            margin-bottom: 15px;
+
+        }
+
+        .baixar {
+            background-color: #000000 !important;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+
+        #currentCoverArt {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            transition: background-image 1s;
+
+        }
+
+        .cover-album {
+            max-width: 80%;
+            margin: auto;
+
+            background-size: cover;
+            border: 2px solid #fefefe;
+            box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.4);
+            transition: background-image 1s;
+            border-radius: 10px;
+            margin-bottom: 15px;
+
+        }
+
+        .info-current-song h2 {
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        element.style {
+            color: #e9ecef;
+            opacity: 1;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            font-weight: 600;
+        }
+
+        .vagalume {
+            color: #f8f9fa;
+
+        }
+
+        a {
+            color: #f8f9fa;
+
+        }
+
+        .btn-play {
+            background-color: white;
+            border: none;
+            color: black;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 25px;
+            width: 80%;
+            transition: transform .2s;
+            box-shadow: 1px 3px #30303022;
+        }
+
+        .logotop {
+            padding: 0px 10px 20px 0px;
+
+        }
+
+        /* Style the navigation menu */
+
+        .topnav {
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0);
+            position: relative;
+        }
+
+        /* Hide the links inside the navigation menu (except for logo/home) */
+        .topnav #myLinks {
+            display: none;
+        }
+
+        /* Style navigation menu links */
+        .topnav a {
+            color: white;
+            background-color: rgba(0, 0, 0, 0);
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
+
+        /* Style the hamburger menu */
+        .topnav a.icon {
+            background: rgb(25, 62, 230);
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        /* Add a grey background color on mouse-over */
+        .topnav a:hover {
+            background-color: #eb116c;
+            color: black;
+        }
+
+        /* Style the active link (or home/logo) */
+        .active {
+            background-color: transparent;
+            color: white;
+        }
+
+
+        element.style {}
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        .iframe[estilo de atributos] {
+            width: 100%;
+            height: 400px;
+            border-top-width: 0px;
+            border-bottom-width: 0px;
+            border-left-width: 0px;
+            border-right-width: 0px;
+        }
+
+
+        .iframe {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        #mylinks {
+            padding-bottom: 10px;
+        }
+
+
+        .faces {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+
+        .face .wp-image-4561 {
+
+            max-width: 95px;
+            max-height: 95px;
+            width: auto;
+            height: auto;
+            display: inline-block;
+            display: inline-block;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            box-shadow: 0px 0px 3px 1px #404040;
+
+        }
+
+
+        .arroba {
+            font-family: 'Roboto', sans-serif;
+            color: #f7f7f7;
+            text-shadow: rgb(255, 255, 255) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px;
+
+
+        }
+
+        element.style {
+            font-family: 'Roboto', sans-serif;
+            color: #f7f7f7;
+            text-shadow: rgb(255, 255, 255) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px;
+            opacity: 0.5;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="cover-site">
+        <div id="bgCover"></div>
+        <div class="bg-mask"></div>
+    </div>
+    <main>
+
+        <section id="player">
+            <div class="container">
+                <div class="row web-player">
+                    <div class="col-12 col-lg-10">
+                        <!-- Top Navigation Menu -->
+                        <div class="topnav">
+                            <a href="https://topvoice.com.br/gospel" class="active">
+                                <img class="logotop"
+                                    src="https://topvoice.com.br/gospel/wp-content/uploads/2022/12/logo-topvoice-gospel-raio.png"
+                                    title="Logo Top Voice Gospel">
+                            </a>
+                            <!-- Navigation links (hidden by default) -->
+                            <div id="myLinks">
+                                <a href="https://topvoice.com.br/gospel/mobile">Home</a>
+                                <a href="https://topvoice.com.br/i/gnews">News</a>
+                                <a href="https://topvoice.com.br/i/podcast">Podcast</a>
+                                <a href="https://topvoice.com.br/i/canais">TV</a>
+                                <a href="https://topvoice.com.br/i/nossasradios">Webradios</a>
+                                <a href="https://topvoice.com.br/i/guialocal">Guia</a>
+                                <a href="https://topvoice.com.br/i/radiosfm">Rádios FM</a>
+                                <a href="https://topvoice.com.br/gospel/shop/">Shop</a>
+                                <a href="https://topvoice.com.br/i/guialocal">Guia</a>
+                                <a href="https://topvoice.com.br/i/youtube">Youtube</a>
+                            </div>
+                            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-5">
+                                <div class="cover-album">
+                                    <div id="currentCoverArt"></div>
+                                    <div class="watermark"></div>
+                                </div>
+                            </div>
+                            <div class="col-12 ml-md-auto col-md-6">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="info-current-song">
+
+                                            <h2 id="currentSong" class="current-song text-uppercase">Top Voice Gospel
+                                            </h2>
+                                            <h3 id="currentArtist" class="current-artist text-captalize">Música
+                                                Abençoada</h3>
+                                            <p>
+                                                <a href="https://topvoice.com.br/i/baixar" target="_blank"
+                                                    class="baixar" style="" data-target="#modalLyrics"> &nbsp; Baixar a
+                                                    Música &nbsp;</a>
+                                            </p>
+                                            <p>
+                                                
+                                                    <a href="https://topvoice.com.br/i/nstagramplay" target="_blank"
+                                                        class="fa fa-instagram" style="#ffffff"> @TopVoiceGospel
+                                                    </a> by <a href="https://topvoice.com.br/i/pjinstaplay"
+                                                    target="_blank" class="instagram" style="#ffffff">PJ</a>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <!--
+                                       <div class="row">
+                                            <div class="play-pause col-12 col-md-2 text-center">
+                                                <i id="playerButton" class="fa fa-play-circle" onclick="togglePlay()"></i>
+                                            </div>
+                                            <div class="col-12 col-md-10 text-center">
+                                                <div class="row volume-control">
+                                                    <div class="volume-icon col-1"><i class="fa fa-volume-up"></i></div>
+                                                    <div class="volume-slide col-10 text-center"><input type="range" id="volume"
+                                                            step="1" min="0" max="100" value="80"></div>
+                                                    <div class="percentual-volume col-12">Volume <span id="volIndicator">...</span>%</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 text-center call-lyrics">
+                                                <a href="#" class="lyrics" style="" data-target="#modalLyrics">VER LETRA</a>
+                                            </div>
+                                        </div>-->
+
+                                        <div class="row">
+                                            <div class="play-pause col-12 col-md-6 text-center">
+                                                <button class="btn-play" onclick="togglePlay()"><i id="playerButton"
+                                                        class="fa fa-play"></i> <span
+                                                        id="buttonPlay">PLAY</span></button>
+
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 text-center">
+                                                <div class="row volume-control">
+                                                    <div class="volume-icon col-1"><i class="fa fa-volume-up"></i></div>
+                                                    <div class="volume-slide col-10 text-center"><input type="range"
+                                                            id="volume" step="1" min="0" max="100" value="80"></div>
+                                                    <div class="percentual-volume col-12">Volume <span
+                                                            id="volIndicator">...</span>%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 text-center call-lyrics">
+                                                <a href="#" class="lyrics letra" style="color:#ffffff"
+                                                    data-target="#modalLyrics">Letra e Vídeo</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="faces">
+                                    <div style="text-align: center;">
+                                        <strong>Músicos</strong>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <figure class="lazyload face"><img
+                                                                class="lazyload wp-image-4561"
+                                                                src="https://topvoice.com.br/gospel/wp-content/uploads/2022/12/Igor-Santos-vocal.jpg"
+                                                                alt="Igor Santos" width="95" height="95"
+                                                                data-wp-editing="1" />
+                                                            <figcaption class="wp-element-caption">IGOR SANTOS
+                                                            </figcaption>
+                                                        </figure>
+                                                    </td>
+                                                    <td>
+                                                        <figure class="lazyload face"><img class="wp-image-4561"
+                                                                src="https://topvoice.com.br/gospel/wp-content/uploads/2022/12/Lukas-Agustinho.jpg"
+                                                                alt="Lukas Agustinho" width="95" height="95" />
+                                                            <figcaption class="wp-element-caption">LUKAS A.</figcaption>
+                                                        </figure>
+                                                    </td>
+                                                    <td>
+                                                        <figure class="lazyload face"><img class="wp-image-4561"
+                                                                src="https://topvoice.com.br/gospel/wp-content/uploads/2022/12/Three-Voices-banda-gospel.jpg"
+                                                                alt="Three Voices Banda Gospel" width="95"
+                                                                height="95" />
+                                                            <figcaption class="wp-element-caption">THREE VOICES
+                                                            </figcaption>
+                                                        </figure>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <figure class="lazyload face"><img class="wp-image-4561"
+                                                                src="https://topvoice.com.br/gospel/wp-content/uploads/2022/12/maria-marcal.jpg"
+                                                                alt="Maria Marçal" width="95" height="95" />
+                                                            <figcaption class="wp-element-caption">MARIA MARÇAL
+                                                            </figcaption>
+                                                        </figure>
+                                                    </td>
+                                                    <td>
+                                                        <figure class="lazyload face"><img class="wp-image-4561"
+                                                                src="https://topvoice.com.br/gospel/wp-content/uploads/2022/12/Julliany-Souza.jpg"
+                                                                alt="Julliany Souza" width="95" height="95" />
+                                                            <figcaption class="wp-element-caption">JULLIANY S.
+                                                            </figcaption>
+                                                        </figure>
+                                                    </td>
+                                                    <td>
+                                                        <figure class="lazyload face"><img class="wp-image-4561"
+                                                                src="https://topvoice.com.br/gospel/wp-content/uploads/2022/12/Weslei-Santos.jpg"
+                                                                alt="Weslei Santos" width="95" height="95" />
+                                                            <figcaption class="wp-element-caption">WESLEI SANTOS
+                                                            </figcaption>
+                                                        </figure>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <figure class="lazyload face"><img class="wp-image-4561"
+                                                                src="https://topvoice.com.br/gospel/wp-content/uploads/2022/12/isaias-saad.jpg"
+                                                                alt="Isaias Saad" width="95" height="95" />
+                                                            <figcaption class="wp-element-caption">ISAIAS SAAD
+                                                            </figcaption>
+                                                        </figure>
+                                                    </td>
+                                                    <td>
+                                                        <figure class="lazyload face"><img class="wp-image-4561"
+                                                                src="https://topvoice.com.br/gospel/wp-content/uploads/2023/01/cantora-gabriela-rocha-e1673163047732.jpg"
+                                                                alt="Cantora Gospel Gabriela Rocha" width="95"
+                                                                height="95" />
+                                                            <figcaption class="wp-element-caption">GABRIELA R.
+                                                            </figcaption>
+                                                        </figure>
+                                                    </td>
+                                                    <td>
+                                                        <figure class="lazyload face"><img class="wp-image-4561"
+                                                                src="https://topvoice.com.br/gospel/wp-content/uploads/2023/01/israel-subira-top-voice-gospel.jpg"
+                                                                alt="Israel Subirá - THE VOICE BRAZIL" width="95"
+                                                                height="95" />
+                                                            <figcaption class="wp-element-caption">ISRAEL SUBIRÁ
+                                                            </figcaption>
+                                                        </figure>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row historic">
+                    <div class="col-12">
+                        <h2>RECENTE PLAY</h2>
+                        <div class="row" id="historicSong">
+                            <article class="col-12 col-md-6">
+                                <div class="cover-historic"></div>
+                                <div class="music-info">
+                                    <div class="song">Carregando...</div>
+                                    <div class="artist">Ouça duas músicas</div>
+                                </div>
+
+                            </article>
+                            <article class="col-12 col-md-6">
+                                <div class="cover-historic"></div>
+                                <div class="music-info">
+                                    <div class="song">Aguarde...</div>
+                                    <div class="artist">Ouça três músicas</div>
+                                </div>
+
+
+                            </article>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="modal fade" id="modalLyrics" tabindex="-1" role="dialog" aria-labelledby="lyricsSong"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lyricsSong">Letras</h5>
+                    <button type="button" style="color: #fff" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body" id="lyric"></div>
+                <div class="modal-footer">
+                    <div>Siga <i class="fa-brands fa-instagram"><a href="https://topvoice.com.br/i/pjinstaplay"
+                                class="instagram" style="#ffffff">PJDigitalWeb</a></i></div>
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+                </div>
+                <div style="text-align: center;">
+                    <iframe
+                        src='https://topvoice.com.br/gospel/player/canais/start/tv.html'
+                        width='100%' height='400' frameborder='0' scrolling='no' title="Video Destaques" loading="lazy"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://topvoice.com.br/gospel/webradio/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://topvoice.com.br/gospel/webradio/js/topvoice.js?3892920001992"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+    <script>
+    (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
+        w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
+        m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://mkt.topvoice.com.br/mtc.js','mt');
+
+    mt('send', 'pageview');
+</script>
+
+</body>
+
+</html>
